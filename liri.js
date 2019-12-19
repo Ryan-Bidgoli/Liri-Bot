@@ -79,4 +79,16 @@ function movieThis(movieName) {
     }
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
    
+    axios.get(queryUrl).then(
+        function (response) {
+            
+            console.log(response.data.Title)
+            console.log(response.data.Year)
+            console.log(response.data.Country)
+            console.log(response.data.Language)
+            console.log(response.data.Plot)
+            console.log(response.data.Actors)
+
+        }
+    );
 }
