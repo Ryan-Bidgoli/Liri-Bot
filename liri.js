@@ -92,3 +92,19 @@ function movieThis(movieName) {
         }
     );
 }
+
+function concertThis(artist) {
+   
+    var bandsQueryUrl = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
+    
+    axios.get(bandsQueryUrl).then(
+        function (response) {
+            console.log(response.data[0].venue.name);
+            console.log(moment(response.data[0].datetime).format("MM/DD/YYYY"));
+            console.log(response.data[0].venue.country);
+            console.log(response.data[0].venue.region);
+            console.log(response.data[0].venue.city);
+        }
+    );
+}
+
