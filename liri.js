@@ -35,7 +35,19 @@ switch (option) {
         })
 }
 
-
 function spotifyCall(songName) {
-    
+    if (songName.length == 0) {
+        songName = ["The Sign Ace"];
+   }
+   
+    var spotify = new Spotify(keys.spotify);
+     
+
+    spotify.search({ type: 'track,artist', query: songName, limit: 5}, function (err, data) {
+        if (err) {
+            return console.log('Error occurred: ' + err);
+        }
+   
+
+    });
 }
