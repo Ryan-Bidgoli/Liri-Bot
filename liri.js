@@ -71,3 +71,12 @@ function spotifyCall(songName) {
 
     });
 }
+
+
+function movieThis(movieName) {
+    if (movieName.length == 0) {
+        movieName = ["Mr. Nobody"];
+    }
+    var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+   
+}
