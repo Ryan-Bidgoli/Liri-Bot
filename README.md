@@ -8,6 +8,10 @@ LIRI is a command line node app that takes in parameters and gives you back data
 -	movie-this
 -	do-what-it-says
 
+## Screenshots:
+
+![](screenshots/Screen Shot 1.png)
+
 
 ## Technologies used:
 
