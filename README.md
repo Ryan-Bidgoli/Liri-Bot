@@ -10,7 +10,7 @@ LIRI is a command line node app that takes in parameters and gives you back data
 
 ## Screenshots:
 
-![ ](screenshots/Screen%20Shot1.png)
+![ ](screenshots/ScreenShot1.png)
 
 
 ## Technologies used:
