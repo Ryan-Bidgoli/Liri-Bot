@@ -35,3 +35,7 @@ switch (option) {
         })
 }
 
+
+function spotifyCall(songName) {
+    
+}
