@@ -47,7 +47,27 @@ function spotifyCall(songName) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-   
+    var response = data.tracks.items; 
+    for(var i = 0; i < response.length; i++)
+    {
+        var artist = response[i].artists;
+        for(var j = 0; j < artist.length; j++)
+        {
+            console.log(artist[j].name);
+            console.log("\n");
+        }
+        console.log(response[i].name);
+        console.log("\n");
+        var preview_url = response[i].preview_url;
+        if(!response[i].preview_url)
+        {
+            preview_url = "url not found";
+        }
+        console.log(preview_url);
+        console.log("\n");
+        console.log(response[i].album.name);
+        console.log("\n-----------------------");
+    }
 
     });
 }
